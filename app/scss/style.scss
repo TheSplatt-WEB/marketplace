@@ -2,3 +2,114 @@
 @import 'global';
 @import 'fonts';
 
+.header__top{
+    background-color: #eef1f3;
+    &-inner{
+        display: flex;justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        & > div + div{
+            margin-left: 50px;
+        }
+    }
+    &-btn{
+        background-color: $blue;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 5px 17px 3px;
+        border-radius: 17px;
+        a{
+            color: #fff;
+        }
+    }
+    &-profile{
+        display: flex;
+        align-items: center;
+    }
+}
+.header__profile{
+    &-avatar{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #7c7979;
+        margin-right: 20px;
+    }
+    &-name{
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #333;
+    }
+    &-balance{
+        display: block;
+        font-size: 15px;
+        line-height: 22px;
+        color: $blue;
+    }
+}
+.header__inner{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-menu{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        a{
+            color: #333;
+        }
+        li + li{
+            margin-left: 35px;
+        }
+    }
+    &-form{
+        max-width: 360px;
+        width: 100%;
+        position: relative;
+        input{
+            display: block;
+            height: 45px;
+            width: 100%;
+            border-radius: 22px;
+            border: 1px solid #d9dfe5;
+            font-size: 15px;
+            line-height: 30px;
+            outline: none;
+            &::placeholder{
+                padding-left: 25px;
+                padding-right: 60px;
+            }
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            background-color: $blue;
+            border-radius: 22px;
+            height: 45px;
+            width: 70px;
+            cursor: pointer;
+            outline: none;
+            &::after{
+                content: "";
+                background-image: url(../images/icons/search-icon.png);
+                position: absolute;
+                height: 16px;
+                width: 16px;
+                left: 50%;
+                transform: translateX(-50%)
+            }
+        }
+    }
+}
