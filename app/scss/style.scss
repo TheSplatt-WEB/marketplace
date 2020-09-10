@@ -461,7 +461,7 @@
         margin-right: 10px;
     }
 }
-.like__qyantity{
+.like__quantity{
     margin-right: 20px;
     color: #555;
     font-size: 15px;
@@ -593,6 +593,9 @@
     margin-bottom: 30px;
     .cart__quantity{
         margin-right: 0;
+    }
+    .like__quantity{
+        margin-right: 15px;
     }
     &:nth-child(even) .product__item-image{
         background-color: #3c6490;
