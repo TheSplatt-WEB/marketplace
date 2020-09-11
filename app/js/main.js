@@ -17,4 +17,10 @@ $(function(){
         slidesToShow: 3,
     });
 
+    $('.reviews__inner').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        variableWidth: true,
+    });
+
 });
