@@ -3,7 +3,9 @@
 @import 'fonts';
 
 //header start
-
+.header__logo{
+    margin-left: 7px;
+}
 .header__top{
     background-color: #eef1f3;
     &-inner{
@@ -14,15 +16,12 @@
     &-info{
         display: flex;
         align-items: center;
-        & > div + div{
-            margin-left: 50px;
-        }
     }
     &-btn{
         background-color: $blue;
         font-size: 14px;
         line-height: 28px;
-        padding: 5px 17px 3px;
+        padding: 5px 18px 3px;
         border-radius: 17px;
         a{
             color: #fff;
@@ -32,6 +31,7 @@
     &-icons{
         display: flex;
         align-items: center;
+        margin: 0 47px 0 50px;
         a{
             position: relative;
             div{
@@ -47,7 +47,7 @@
             }
         }
         a + a{
-            margin-left: 30px;
+            margin-left: 31px;
         }
     }
     &-profile{
@@ -57,11 +57,11 @@
 }
 .quantity__alarm{
     background-color: #ff6a6c;
-    right: -15px;
+    right: -12px;
 }
 .quantity__envelope{
     background-color: #62d03b;
-    right: -18px;
+    right: -16px;
 }
 .quantity__cart{
     background-color: $blue;
@@ -76,7 +76,7 @@
         width: 50px;
         border-radius: 50%;
         background-color: #7c7979;
-        margin-right: 20px;
+        margin-right: 23px;
     }
     &-name{
         display: block;
@@ -108,7 +108,7 @@
             display: inline-block;
         }
         li + li{
-            margin-left: 35px;
+            margin-left: 29px;
         }
     }
     &-form{
@@ -161,7 +161,7 @@
     color: #f3f3f8;
     text-align: center;
     padding-top: 170px;
-    padding-bottom: 230px;
+    padding-bottom: 234px;
     position: relative;
     &-title{
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
@@ -175,7 +175,7 @@
     &-descr{
         font-size: 20px;
         font-weight: 500;
-        margin-bottom: 70px;
+        margin-bottom: 69px;
     }
     &::before{
         content: "";
@@ -221,8 +221,7 @@
                 width: 100%;
                 outline: none;
                 padding: 0;
-                padding-left: 20px;
-                padding-right: 70px;
+                padding: 0 28px;
             }
             .input__list{
                 max-width: 200px;
@@ -232,6 +231,7 @@
                 border: 1px solid #dcdcdc;
                 border-left: none;
                 border-radius: 0 6px 6px 0;
+                padding-left: 24px;
                 cursor: pointer;
                 &::-webkit-calendar-picker-indicator{
                     display: none;
@@ -253,11 +253,12 @@
     }
 }
 .search__button{
-    padding: 20px 30px;
+    padding: 18px 30px;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 40px;
     transition: all .3s;
+    margin: 0px 14px;
     &:hover{
         background-color: #fff;
         color: $blue;
@@ -271,7 +272,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 190px;
-    padding-bottom: 120px;
+    padding-bottom: 125px;
 }
 .quality__item{
     text-align: center;
@@ -280,9 +281,13 @@
     border-radius: 6px;
     &:nth-child(2){
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        padding-top: 37px;
+        .quality__item-title{
+            margin: 28px 0 20px;
+        }
     }
     &-title{
-        margin: 35px 0;
+        margin: 32px 0 20px;
         font-size: 24px;
     }
     &-descr{
@@ -306,7 +311,7 @@
         background-position: center;
         background-color: $violet;
         position: absolute;
-        top: -128px;
+        top: -125px;
         z-index: 1;
         cursor: pointer;
         outline: none;
@@ -314,7 +319,7 @@
     .slick-prev{
         background-image: url(../images/icons/chevron-left.svg);
         border-radius: 30px 0 0 30px;
-        right: 83px;
+        right: 84px;
     }
     .slick-next{
         background-image: url(../images/icons/chevron-right.svg);
@@ -329,10 +334,10 @@
 .title__box{
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         font-size: 30px;
-        padding: 40px 30px;
+        padding: 37px 30px;
         background-color: #fff;
         border-radius: 4px;
-        margin-bottom: 50px;
+        margin-bottom: 51px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 
 }
@@ -352,7 +357,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 50%;
+        width: 48.6%;
         height: 450px;
         cursor: pointer;
 
@@ -360,12 +365,12 @@
             opacity: 1;
         }
         &--hover{
-            background-image: linear-gradient( 270deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+            background-image: linear-gradient( 270deg, rgba(6,116,236,.9) 0%, rgba(61,94,215,.9) 46%, rgba(115,71,193,.9) 100%);
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50%;
+            width: 48.6%;
             height: 450px;
             top: 0;
             left: 0;
@@ -376,27 +381,25 @@
             &:hover{
                 opacity: 1;
             }
-            .hover__btn{
-                a{
-                    border: 1px solid #fff;
-                    border-radius: 30px;
-                    font-size: 15px;
-                    font-weight: 500;
-                    padding: 15px 30px;
-                    margin: 0px 4px;
-                    color: #fff;
-                    transition: all .3s;
-                    &:hover{
-                        background-color: #fff;
-                        color: $blue;
-                    }
+            a{
+                border: 1px solid #fff;
+                border-radius: 30px;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 13px 28px;
+                margin: 0px 6px;
+                color: #fff;
+                transition: all .3s;
+                &:hover{
+                    background-color: #fff;
+                    color: $blue;
                 }
             }
         }
     }
     &-text{
-        padding: 45px 45px 0 45px;
-        width: 50%;
+        padding: 45px 45px 0 51px;
+        width: 51.4%;
     }
     &-title{
         font-weight: 500;
@@ -408,10 +411,10 @@
     }
     &-parametr{
         display: flex;
-        margin: 15px 0;
+        margin: 15px 0 28px;
     }
     &-manager{
-        margin-right: 20px;
+        margin-right: 18px;
         display: flex;
         align-items: center;
     }
@@ -420,7 +423,7 @@
         align-items: center;
     }
     &-subcategory{
-        padding: 40px 0;
+        padding: 34px 0 50px;
         border-bottom: 1px solid #ececec;
         a{
             font-size: 15px;
@@ -446,7 +449,7 @@
         color: #fff;
         background-color: $blue;
         line-height: 30px;
-        padding: 0 15px;
+        padding: 1px 22px;
         border-radius: 15px;
         margin-right: 20px;
     }
@@ -455,14 +458,14 @@
         align-items: center;
     }
     &-like{
-        margin-right: 10px;
+        margin-right: 6px;
     }
     &-cart{
-        margin-right: 10px;
+        margin-right: 7px;
     }
 }
 .like__quantity{
-    margin-right: 20px;
+    margin-right: 19px;
     color: #555;
     font-size: 15px;
 }
@@ -703,3 +706,111 @@
     }
 }
 //end indicators
+//start advantages
+.advantages{
+    padding: 110px 0px 90px;
+    background-color: #fff;
+    &__text{
+        text-align: center;
+        &-title{
+            font-size: 36px;
+            margin-bottom: 20px;
+            span{
+                color: $blue;
+            }
+        }
+        &-descr{
+            margin: 0 auto;
+            max-width: 680px;
+            margin-bottom: 50px;
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        position: relative;
+        &:nth-child(2){
+            &::before{
+                content: "2";
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                content: "3";
+            }
+        }
+        &:nth-child(4){
+            &::before{
+                content: "4";
+            }
+        }
+        &:nth-child(5){
+            &::before{
+                content: "5";
+            }
+        }
+        &:nth-child(6){
+            &::before{
+                content: "6";
+            }
+        }
+        &::before{
+            content: "1";
+            font-size: 48px;
+            color: rgba(#5c87f8,.2);position: absolute;
+            top: 12px;
+            left: 20px;
+        }
+        text-align: center;
+        max-width: 360px;
+        width: 100%;
+        padding: 50px 30px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        &-title{
+            font-size: 24px;
+            margin: 50px 0px 20px;
+        }
+    }
+}
+//end advantages
+//start appeal
+.appeal__inner{
+    display: flex;
+    justify-content: center;
+}
+.appeal__item{
+    width: 50%;
+    background-image: url(../images/appeal-left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 100px;
+    &:nth-child(2){
+        background-image: url(../images/appeal-right.jpg);
+    }
+    &-title{
+        font-size: 36px;
+        margin: 40px 0px 20px;
+    }
+    &-descr{
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    a{
+        padding: 20px 25px;
+        background-color: #fff;
+        color: transperent;
+        border-radius: 40px;
+    }
+}
+//end appeal
+//start reviews
+
+//end reviews

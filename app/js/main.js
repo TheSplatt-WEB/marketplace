@@ -3,7 +3,7 @@ $(function(){
         
     });
     $('.product__item-star').rateYo({
-        starWidth: '13px',
+        starWidth: '18px',
         rating: '4.5',
         ratedFill: '#ffc000',
         readOnly: true,
