@@ -14,7 +14,7 @@ $(function(){
     var mixer = mixitup('.relise__inner');
 
     $('.followers__slider').slick({
-        slidesToShow: 3,
+        variableWidth: true,
     });
 
     $('.reviews__inner').slick({
