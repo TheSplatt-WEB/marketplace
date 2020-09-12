@@ -1015,3 +1015,53 @@
     }
 }
 //end news
+//spart advantages-more
+.advantages-more{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+    padding: 65px 0;
+        width: 50%;
+        & + .advantages-more__item{
+            border-left: 1px solid #ececec;
+        }
+        &-image{
+            text-align: center;
+        }
+        &-text{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 24px;
+            span{
+                color: $blue;
+            }
+        }
+    }
+}
+//end advantages-more
+//start ready
+.ready{
+    padding: 110px 0;
+    background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    &__inner{
+        text-align: center;
+        &-title{
+            font-size: 36px;
+        color: #fff;
+        }
+        &-descr{
+            color: #e7e7e7;
+            font-size: 18px;
+            margin: 20px 0px 50px;
+        }
+        a{
+            color: $blue;
+            padding: 20px 44px;
+            background-color: #fff;
+            border-radius: 30px;
+        }
+    }
+}
+//end ready
