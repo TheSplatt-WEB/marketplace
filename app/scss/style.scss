@@ -899,8 +899,11 @@
 .popular__item{
     justify-content: center;
 }
-.product__item{
+.popular__item{
     display: flex !important;
+}
+.product__item{
+    display: flex;
     background-color: #fff;
     min-height: 450px;
     height: 100%;
