@@ -16,13 +16,17 @@ ul, li{
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     color: #555;
     font-size: 16px;
     font-weight: 400;
     height: 100%;
-    background-color: #ccc;
 }
 .wrapper{
     display: flex;
@@ -46,4 +50,13 @@ body{
 }
 .jq-ry-container{
     padding: 0;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    span{
+        color: $blue;
+        margin-left: 10px;
+    }
 }
