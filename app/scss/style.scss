@@ -2842,6 +2842,8 @@
                 padding: 18px;
                 border-radius: 30px;
                 margin: 30px 0 38px;
+                max-width: 190px;
+                width: 100%;
             }
         }
         &-info{
@@ -2879,6 +2881,61 @@
     }
 }
 //end error
+//start login
+.login__checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    .login-btn{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        left: 50%;
+    }
+    .login-btn+label{
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        margin-right: 15px;
+    }
+    .login-btn+label::before{
+        content: "";
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 4px solid #e6e9ed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+        cursor: pointer;
+    }
+    .login-btn:checked+label::before{
+        border: 4px solid #0674ec;
+        background-color: #0674ec;
+        background-image: url(../images/icons/check-white.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.registration__inner-box{
+    display: flex;
+    justify-content: space-between;
+    .registration__inner-info{
+        a{
+            margin: 0px 5px;
+        }
+    }
+}
+//end login
+
+
 
   
 @import 'media';
