@@ -101,6 +101,17 @@
 .header__bottom{
     background-color: #fff;
 }
+.header__menu-btn{
+    width: 30px;
+    display: none;
+    cursor: pointer;
+    div{
+        height: 5px;
+        margin-top: 4px;
+        border: 2px solid #000;
+        border-radius: 2px;
+    }
+}
 .header__inner{
     position: relative;
     min-height: 80px;
@@ -171,7 +182,7 @@
     top: 80px;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -184,6 +195,7 @@
     &-item{
         max-width: 430px;
         width: 100%;
+        transition: all .3s;
         &-center{
             max-width: 165px;
         }
@@ -400,8 +412,8 @@
             justify-content: space-between;
             align-items: center;
             button{
-                height: 30px;
-                width: 30px;
+                min-height: 30px;
+                min-width: 30px;
                 border: none;
                 border-radius: 50%;
                 background-color: #f1ecf9;
@@ -1611,7 +1623,7 @@
 //start footer
 .footer__top{
     background-color: #262b30;
-    padding: 115px 120px;
+    padding: 115px 0 120px;
     .header__logo{
         margin-left: 0;
     }
@@ -2027,6 +2039,9 @@
                 border-radius: 20px;
                 top: 55px;
             }
+            .irs-handle.type_last{
+                z-index: 1;
+            }
             button{
                 margin-top: 80px;
                 margin-bottom: 30px;
@@ -2301,3 +2316,7 @@
 
 //end search-page
 
+
+
+
+@import 'media';

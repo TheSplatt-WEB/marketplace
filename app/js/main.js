@@ -50,5 +50,7 @@ $(function(){
         $('.button-page').removeClass('active');
         $('.product__item').addClass('list');
     });
-
+    $('.header__menu-btn').on('click', function(){
+        $('.header__menu-list').slideToggle();
+    });
 });
