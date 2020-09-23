@@ -2853,7 +2853,32 @@
     }
 }
 //end registration
-
+//start error
+.error{
+    padding: 70px 0px 100px;
+    &__inner{
+        text-align: center;
+        &-image{
+            margin-bottom: 50px;
+        }
+        &-text{
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+        &-btn{
+            a{
+                background-color: $blue;
+                color: #fff;
+                padding: 20px;
+                max-width: 190px;
+                border-radius: 30px;
+                width: 100%;
+            }
+        }
+    }
+}
+//end error
 
   
 @import 'media';
