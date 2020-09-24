@@ -2934,7 +2934,19 @@
     }
 }
 //end login
-
+//start recover-password
+.registration__inner-descr.recover__password-descr{
+    text-align: left;
+}
+.registration__inner-text.recover__password-text{
+    padding: 0px 50px 30px;
+}
+.registration__inner-form.recover__password-form{
+    button{
+        margin-bottom: 0;
+    }
+}
+//end recover-password
 
 
   

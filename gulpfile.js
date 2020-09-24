@@ -21,7 +21,6 @@ gulp.task('main', function () {
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('script', function () {
