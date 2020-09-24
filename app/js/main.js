@@ -60,5 +60,8 @@ $(function(){
             $(this).addClass('active');
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
-        });
+    });
+    $('.blog-asaid__item-button').on('click', function(){
+        $('.blog-asaid__item-button').toggleClass('active');
+    });
 });
