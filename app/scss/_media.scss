@@ -2,9 +2,6 @@
     .footer__inner{
         flex-wrap: wrap;
     }
-    .footer__item-last{
-        max-width: 100%;
-    }
     .footer__item{
         margin-bottom: 30px;
     }
@@ -13,11 +10,12 @@
         justify-content: start;
     }
     .pages__dropdown-item-last{
-        width: 100%;
+        width: 50%;
+        padding-left: 30px;
     }
     .pages__dropdown-item-center{
-        max-width: calc(100% - 430px);
-        padding-left: 30px;
+        max-width: calc(50% - 30px);
+        padding-left: 0;
     }
     .pages__dropdown-item{
         text-align: left;
@@ -68,6 +66,7 @@
             top: 47px;
             left: 0;
             right: 0;
+            min-width: 100%;
         }
         .header__box-wordpress, .header__box-products, .header__box-home, .header__box-pages{
             &::before{
@@ -107,8 +106,10 @@
     }
     .pages__dropdown-item-first, .pages__dropdown-item-last{
         ul{
-            width: 50%;
+            width: 100%;
         }
+        padding-left: 0;
+        width: 100%;
     }
     .pages__dropdown-item-center{
         padding-left: 0;
@@ -176,6 +177,9 @@
     .header__profile-avatar{
         margin-right: 0;
     }
+    .header__top-user:hover .user__menu::before{
+        right: 20px;
+    }
 }
 @media (max-width: 450px){
     .header__top-envelope, .header__top-alarm{
@@ -214,6 +218,7 @@
             text-align: center;
             li{
                 margin-right: 0;
+                width: 100%;
             }
             a:hover{
                 color: #fff;
