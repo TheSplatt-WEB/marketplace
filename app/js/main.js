@@ -69,4 +69,7 @@ $(function(){
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
     });
+    $('.favourites-filter').on('click', function(){
+        $(this).children().first('option').addClass('option-disabled');
+    });
 });
