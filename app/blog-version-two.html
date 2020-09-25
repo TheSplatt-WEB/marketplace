@@ -612,64 +612,135 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="single-asaid_item-box blog-asaid__item">
+                            <div class="single-asaid_item-box blog-asaid__item blog-asaid__item-tabs">
                                 <div class="blog-asaid__item-btn">
-                                    <button class="blog-asaid__item-button active">Popular Posts</button>
-                                    <button class="blog-asaid__item-button">Latest Posts</button>
+                                    <div class="tabs">
+                                        <div class="tab active" data-id="1">Popular Posts</div>
+                                        <div class="tab" data-id="2">Latest Posts</div>
+                                    </div>
                                 </div>
-                                <ul class="blog-asaid__item-list">
-                                    <li><a href="#">
-                                            <div class="blog-asaid__item-list-image" style="background-image: url(images/content/popular.jpg);"></div>
-                                            <div class="blog-asaid__item-list-info">
-                                                <div class="blog-asaid__item-list-title">
-                                                    5 best jQuery form validation plugins you must try
-                                                </div>
-                                                <div class="blog-asaid__item-list-date lnr-clock">
-                                                    24 Feb 2017
-                                                </div>
-                                            </div>
-                                        </a></li>
-                                    <li><a href="#">
-                                            <div class="blog-asaid__item-list-image" style="background-image: url(images/content/popular.jpg);"></div>
-                                            <div class="blog-asaid__item-list-info">
-                                                <div class="blog-asaid__item-list-title">
-                                                    Best free jQuery image gallery plugins 2017
-                                                </div>
-                                                <div class="blog-asaid__item-list-date lnr-clock">
-                                                    24 Feb 2017
-                                                </div>
-                                            </div>
-                                        </a></li>
-                                    <li><a href="#">
-                                            <div class="blog-asaid__item-list-image" style="background-image: url(images/content/popular.jpg);"></div>
-                                            <div class="blog-asaid__item-list-info">
-                                                <div class="blog-asaid__item-list-title">
-                                                    10 Free Joomla! Templates
-                                                </div>
-                                                <div class="blog-asaid__item-list-date lnr-clock">
-                                                    24 Feb 2017
-                                                </div>
-                                            </div>
-                                        </a></li>
-                                    <li><a href="#">
-                                            <div class="blog-asaid__item-list-image" style="background-image: url(images/content/popular.jpg);"></div>
-                                            <div class="blog-asaid__item-list-info">
-                                                <div class="blog-asaid__item-list-title">
-                                                    How to Create One Page Joomla Template
-                                                </div>
-                                                <div class="blog-asaid__item-list-date lnr-clock">
-                                                    24 Feb 2017
-                                                </div>
-                                            </div>
-                                        </a></li>
-                                </ul>
+                                <div class="tab_content blog-asaid__item-tab-content">
+                                    <div class="tab-item active-tab" id="1">
+                                        <ul class="blog-asaid__item-list">
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            5 best jQuery form validation plugins you must try
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            24 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            Best free jQuery image gallery plugins 2017
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            24 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            10 Free Joomla! Templates
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            24 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            How to Create One Page Joomla Template
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            24 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-item" id="2">
+                                        <ul class="blog-asaid__item-list">
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            5 best jQuery form validation plugins you must try
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            25 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            Best free jQuery image gallery plugins 2017
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            30 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            10 Free Joomla! Templates
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            30 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="blog-asaid__item-list-image"
+                                                        style="background-image: url(images/content/popular.jpg);">
+                                                    </div>
+                                                    <div class="blog-asaid__item-list-info">
+                                                        <div class="blog-asaid__item-list-title">
+                                                            How to Create One Page Joomla Template
+                                                        </div>
+                                                        <div class="blog-asaid__item-list-date lnr-clock">
+                                                            30 Feb 2017
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="single-asaid_item-box blog-asaid__item">
                                 <div class="blog-asaid__item-title">
                                     Categories
                                 </div>
                                 <ul class="blog-asaid__item-categoryes">
-                                    <li><a class="lnr-chevron-right" href="#">WordPress Tutorials</a><span>35</span></li>
+                                    <li><a class="lnr-chevron-right" href="#">WordPress Tutorials</a><span>35</span>
+                                    </li>
                                     <li><a class="lnr-chevron-right" href="#">News & Updates</a><span>45</span></li>
                                     <li><a class="lnr-chevron-right" href="#">Tutorials</a><span>13</span></li>
                                     <li><a class="lnr-chevron-right" href="#">Joomla Tutorials</a><span>08</span></li>
@@ -698,13 +769,17 @@
                                 </ul>
                             </div>
                             <div class="single-asaid_item-box blog-asaid__item">
-                                <div class="blog-asaid__item-img" style="background-image: url(images/content/popular.jpg);"></div>
+                                <div class="blog-asaid__item-img"
+                                    style="background-image: url(images/content/popular.jpg);"></div>
                             </div>
                         </div>
                     </div>
                     <div class="category-page__pagenation blog-pagenation">
-                        <button class="pagenation-prev"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-                            <path fill="#000" d="M0.646 10.146l6-6c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-5.146 5.146h16.293c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-16.293l5.146 5.146c0.195 0.195 0.195 0.512 0 0.707-0.098 0.098-0.226 0.146-0.354 0.146s-0.256-0.049-0.354-0.146l-6-6c-0.195-0.195-0.195-0.512 0-0.707z"></path>
+                        <button class="pagenation-prev"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="#000"
+                                    d="M0.646 10.146l6-6c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-5.146 5.146h16.293c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-16.293l5.146 5.146c0.195 0.195 0.195 0.512 0 0.707-0.098 0.098-0.226 0.146-0.354 0.146s-0.256-0.049-0.354-0.146l-6-6c-0.195-0.195-0.195-0.512 0-0.707z">
+                                </path>
                             </svg></button>
                         <ul>
                             <li><span class="active">1</span></li>
@@ -712,10 +787,13 @@
                             <li><a href="#">...</a></li>
                             <li><a href="#">8</a></li>
                         </ul>
-                        <button class="pagenation-next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-                            <path fill="#000" d="M19.354 10.146l-6-6c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.146 5.146h-16.293c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h16.293l-5.146 5.146c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l6-6c0.195-0.195 0.195-0.512 0-0.707z"></path>
+                        <button class="pagenation-next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="#000"
+                                    d="M19.354 10.146l-6-6c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.146 5.146h-16.293c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h16.293l-5.146 5.146c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l6-6c0.195-0.195 0.195-0.512 0-0.707z">
+                                </path>
                             </svg>
-                            </button>
+                        </button>
                     </div>
                 </div>
             </section>
