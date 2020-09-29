@@ -1,6 +1,5 @@
 $(function(){
     $('.popular__inner').slick({
-        
     });
     $('.product__item-star').rateYo({
         starWidth: '15px',
@@ -15,13 +14,38 @@ $(function(){
     };
 
     $('.followers__slider').slick({
-        variableWidth: true,
+        slidesToShow: 3,
+        responsive: [
+            {
+              breakpoint: 1050,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 820,
+                settings: {
+                  slidesToShow: 1,
+                }
+              },
+          ]
     });
 
     $('.reviews__inner').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+                arrows: false,
+              }
+            },
+          ]
     });
 
     $(".js-range-slider").ionRangeSlider({
@@ -72,4 +96,10 @@ $(function(){
     $('.favourites-filter').on('click', function(){
         $(this).children().first('option').addClass('option-disabled');
     });
+    var w = $(window).width();
+    if (w <= 1380) {
+        $('a[name="none-click"]').on('click', function (e) {
+            e.preventDefault();
+        });
+    }
 });

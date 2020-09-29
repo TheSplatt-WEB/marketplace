@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="header__top-icons">
                                     <div class="header__top-box">
-                                        <a class="header__top-alarm" href="#">
+                                        <a class="header__top-alarm" name="none-click" href="#">
                                             <img src="images/icons/alarm.svg" alt="">
                                             <div class="quantity__alarm">25</div>
                                         </a>
@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                     <div class="header__top-box">
-                                        <a class="header__top-envelope" href="#">
+                                        <a class="header__top-envelope" name="none-click" href="#">
                                             <img src="images/icons/envelope.svg" alt="">
                                             <div class="quantity__envelope">6</div>
                                         </a>
@@ -242,7 +242,7 @@
                                         </div>
                                     </div>
                                     <div class="header__top-box">
-                                        <a class="header__top-cart" href="#">
+                                        <a class="header__top-cart" name="none-click" href="#">
                                             <img src="images/icons/cart-top.svg" alt="">
                                             <div class="quantity__cart">2</div>
                                         </a>
@@ -311,11 +311,11 @@
                                 </div>
                                 <div class="header__top-user">
                                     <div class="header__top-profile">
-                                        <a class="header__profile-avatar" href="#"
+                                        <a class="header__profile-avatar" name="none-click" href="#"
                                             style="background-image: url(images/content/avatar.jpg);"></a>
                                         <div class="header__profile-text">
-                                            <a class="header__profile-name" href="#">Taofiq Hakim</a>
-                                            <a class="header__profile-balance" href="#">$20.45</a>
+                                            <a class="header__profile-name" name="none-click" href="#">Taofiq Hakim</a>
+                                            <a class="header__profile-balance" name="none-click" href="#">$20.45</a>
                                         </div>
                                     </div>
                                     <ul class="user__menu">
@@ -347,7 +347,7 @@
                                 </div>
                                 <ul class="header__menu-list">
                                     <li class="header__box-home">
-                                        <a href="#">HOME</a>
+                                        <a name="none-click" href="#">HOME</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Home One Multi User</a></li>
                                             <li><a href="#">Home Two Single User</a></li>
@@ -355,7 +355,7 @@
                                         </ul>
                                     </li>
                                     <li class="header__box-products">
-                                        <a href="#">all products</a>
+                                        <a name="none-click" href="#">all products</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Recent Items</a></li>
                                             <li><a href="#">Popular Items</a></li>
@@ -366,7 +366,7 @@
                                         </ul>
                                     </li>
                                     <li class="header__box-wordpress">
-                                        <a href="#">wordpress</a>
+                                        <a name="none-click" href="#">wordpress</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Popular Items</a></li>
                                             <li><a href="#">Admin Templates</a></li>
@@ -383,7 +383,7 @@
                                         <a href="#">festures</a>
                                     </li>
                                     <li class="header__box-pages">
-                                        <a href="#">Pages</a>
+                                        <a name="none-click" href="#">Pages</a>
                                         <div class="pages__dropdown">
                                             <div class="pages__dropdown-item pages__dropdown-item-first">
                                                 <div class="pages__dropdown-title">
@@ -498,12 +498,13 @@
                     </div>
                 </div>
             </section>
-            <div class="filter-page">
+            <div class="filter-page favourites-filter__page">
                 <div class="container">
                     <div class="filter-page__inner favourites__filter">
-                        <div class="faivourites-quantity">
-                            570 Favourites Found
-                        </div>
+                        <div class="favourites-filter__wrapper">
+                            <div class="faivourites-quantity">
+                                570 Favourites Found
+                            </div>
                             <select class="favourites-filter">
                                 <option>Filter By</option>
                                 <option>Category 1</option>
@@ -511,6 +512,7 @@
                                 <option>Category 3</option>
                                 <option>Category 4</option>
                             </select>
+                        </div>
                         <div class="filter-page__inner-sort">
                             <div class="select-text">Price :</div>
                             <select class="select-price">
@@ -520,7 +522,7 @@
                                 <option>Low to High</option>
                                 <option>Low to High</option>
                             </select>
-                            <select>
+                            <select class="center-select">
                                 <option>12 Items Per Page</option>
                                 <option>12 Items Per Page</option>
                                 <option>12 Items Per Page</option>
@@ -1495,9 +1497,9 @@
                                 </div>
                             </div>
                             <div class="category-page__pagenation">
-                                <a class="pagenation-prev" href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
-                                        viewBox="0 0 20 20">
+                                <a class="pagenation-prev" href="#"><svg version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="20" height="20" viewBox="0 0 20 20">
                                         <path fill="#000"
                                             d="M0.646 10.146l6-6c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-5.146 5.146h16.293c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-16.293l5.146 5.146c0.195 0.195 0.195 0.512 0 0.707-0.098 0.098-0.226 0.146-0.354 0.146s-0.256-0.049-0.354-0.146l-6-6c-0.195-0.195-0.195-0.512 0-0.707z">
                                         </path>
@@ -1508,9 +1510,9 @@
                                     <li><a href="#">...</a></li>
                                     <li><a href="#">8</a></li>
                                 </ul>
-                                <a class="pagenation-next" href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
-                                        viewBox="0 0 20 20">
+                                <a class="pagenation-next" href="#"><svg version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="20" height="20" viewBox="0 0 20 20">
                                         <path fill="#000"
                                             d="M19.354 10.146l-6-6c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.146 5.146h-16.293c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h16.293l-5.146 5.146c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l6-6c0.195-0.195 0.195-0.512 0-0.707z">
                                         </path>

@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="header__top-icons">
                                     <div class="header__top-box">
-                                        <a class="header__top-alarm" href="#">
+                                        <a class="header__top-alarm" name="none-click" href="#">
                                             <img src="images/icons/alarm.svg" alt="">
                                             <div class="quantity__alarm">25</div>
                                         </a>
@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                     <div class="header__top-box">
-                                        <a class="header__top-envelope" href="#">
+                                        <a class="header__top-envelope" name="none-click" href="#">
                                             <img src="images/icons/envelope.svg" alt="">
                                             <div class="quantity__envelope">6</div>
                                         </a>
@@ -242,7 +242,7 @@
                                         </div>
                                     </div>
                                     <div class="header__top-box">
-                                        <a class="header__top-cart" href="#">
+                                        <a class="header__top-cart" name="none-click" href="#">
                                             <img src="images/icons/cart-top.svg" alt="">
                                             <div class="quantity__cart">2</div>
                                         </a>
@@ -311,11 +311,11 @@
                                 </div>
                                 <div class="header__top-user">
                                     <div class="header__top-profile">
-                                        <a class="header__profile-avatar" href="#"
+                                        <a class="header__profile-avatar" name="none-click" href="#"
                                             style="background-image: url(images/content/avatar.jpg);"></a>
                                         <div class="header__profile-text">
-                                            <a class="header__profile-name" href="#">Taofiq Hakim</a>
-                                            <a class="header__profile-balance" href="#">$20.45</a>
+                                            <a class="header__profile-name" name="none-click" href="#">Taofiq Hakim</a>
+                                            <a class="header__profile-balance" name="none-click" href="#">$20.45</a>
                                         </div>
                                     </div>
                                     <ul class="user__menu">
@@ -347,7 +347,7 @@
                                 </div>
                                 <ul class="header__menu-list">
                                     <li class="header__box-home">
-                                        <a href="#">HOME</a>
+                                        <a name="none-click" href="#">HOME</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Home One Multi User</a></li>
                                             <li><a href="#">Home Two Single User</a></li>
@@ -355,7 +355,7 @@
                                         </ul>
                                     </li>
                                     <li class="header__box-products">
-                                        <a href="#">all products</a>
+                                        <a name="none-click" href="#">all products</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Recent Items</a></li>
                                             <li><a href="#">Popular Items</a></li>
@@ -366,7 +366,7 @@
                                         </ul>
                                     </li>
                                     <li class="header__box-wordpress">
-                                        <a href="#">wordpress</a>
+                                        <a name="none-click" href="#">wordpress</a>
                                         <ul class="menu__dropdown">
                                             <li><a href="#">Popular Items</a></li>
                                             <li><a href="#">Admin Templates</a></li>
@@ -383,7 +383,7 @@
                                         <a href="#">festures</a>
                                     </li>
                                     <li class="header__box-pages">
-                                        <a href="#">Pages</a>
+                                        <a name="none-click" href="#">Pages</a>
                                         <div class="pages__dropdown">
                                             <div class="pages__dropdown-item pages__dropdown-item-first">
                                                 <div class="pages__dropdown-title">
@@ -504,7 +504,7 @@
                         </div>
                         <div class="search__inner-form">
                             <form>
-                                <input type="text" placeholder="Search your products..." required>
+                                <input class="search__input" type="text" placeholder="Search your products..." required>
                                 <input class="input__list" list="category" placeholder="All Categories">
                                 <datalist id="category">
                                     <option>All Categories</option>
@@ -576,181 +576,198 @@
                         Weekly Featured Products
                     </div>
                     <div class="popular__inner">
-                        <div class="product__item popular__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        One Page Resume Template
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the
-                                        mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                        pharetra,
-                                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                                    </div>
-                                    <div class="product__item-subcategory">
-                                        <a href="#">website</a>
-                                        <a href="#">plugin</a>
-                                        <a href="#">landing page</a>
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item popular__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $10 - $50
-                                        </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">46</div>
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">634</div>
-                                    </div>
-                                    <div class="product__item-star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item popular__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <div class="hover__btn">
+                                <div class="product__item-image--hover">
                                     <a href="#">More Info</a>
                                     <a href="#">Live Demo</a>
                                 </div>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        Two Page Resume Template
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            One Page Resume Template
                                         </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the
-                                        mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                        pharetra,
-                                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                                    </div>
-                                    <div class="product__item-subcategory">
-                                        <a href="#">website</a>
-                                        <a href="#">plugin</a>
-                                        <a href="#">landing page</a>
-                                    </div>
-                                </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $10 - $50
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">46</div>
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">634</div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the
+                                            mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                            Praesent
+                                            pharetra,
+                                            justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                            scelerisque.
+                                        </div>
+                                        <div class="product__item-subcategory">
+                                            <a href="#">website</a>
+                                            <a href="#">plugin</a>
+                                            <a href="#">landing page</a>
+                                        </div>
                                     </div>
-                                    <div class="product__item-star">
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $10 - $50
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">46</div>
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">634</div>
+                                        </div>
+                                        <div class="product__item-star">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__item popular__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <a class="product__item-title" href="#">
-                                    Thre Page Resume Template
-                                </a>
-                                <div class="product__item-parametr">
-                                    <a class="product__item-manager" href="#">
-                                        <div class="item__manager-avatar"
-                                            style="background-image: url(images/content/avatar.jpg);"></div>
-                                        <div class="item__manager-name">
-                                            AazzTech
-                                        </div>
-                                    </a>
-                                    <a class="product__item-category" href="#">
-                                        <div class="item__category-icon">
-                                            <img src="images/icons/wordpress.png" alt="">
-                                        </div>
-                                        <div class="item__category-name">WordPress</div>
-                                    </a>
+                        <div class="popular__slide">
+                            <div class="product__item popular__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-descr">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the
-                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                    pharetra,
-                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
                                 </div>
-                                <div class="product__item-subcategory">
-                                    <a href="#">website</a>
-                                    <a href="#">plugin</a>
-                                    <a href="#">landing page</a>
-                                </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $10 - $50
-                                        </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            One Page Resume Template
                                         </a>
-                                        <div class="like__quantity">46</div>
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">634</div>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
+                                        </div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the
+                                            mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                            Praesent
+                                            pharetra,
+                                            justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                            scelerisque.
+                                        </div>
+                                        <div class="product__item-subcategory">
+                                            <a href="#">website</a>
+                                            <a href="#">plugin</a>
+                                            <a href="#">landing page</a>
+                                        </div>
                                     </div>
-                                    <div class="product__item-star"></div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $10 - $50
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">46</div>
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">634</div>
+                                        </div>
+                                        <div class="product__item-star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__slide">
+                            <div class="product__item popular__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
+                                </div>
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            One Page Resume Template
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
+                                        </div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the
+                                            mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                            Praesent
+                                            pharetra,
+                                            justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                            scelerisque.
+                                        </div>
+                                        <div class="product__item-subcategory">
+                                            <a href="#">website</a>
+                                            <a href="#">plugin</a>
+                                            <a href="#">landing page</a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $10 - $50
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">46</div>
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">634</div>
+                                        </div>
+                                        <div class="product__item-star">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -780,14 +797,16 @@
                         </div>
                     </div>
                     <div class="title__box relise__btn">
-                        <button type="button" data-filter=".category-plugins">Plugins</button>
-                        <button type="button" data-filter=".category-wordpress">WordPress</button>
-                        <button type="button" data-filter=".category-sitetemplate">Site Template</button>
-                        <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
-                        <button type="button" data-filter=".category-joomla">Joomla</button>
-                        <button type="button" data-filter=".category-userinterface">User Interface</button>
-                        <button type="button" data-filter=".category-landingpage">Landing Page</button>
-                        <button type="button" data-filter=".category-software">Software</button>
+                        <div class="relise__btn-wrapper">
+                            <button type="button" data-filter=".category-plugins">Plugins</button>
+                            <button type="button" data-filter=".category-wordpress">WordPress</button>
+                            <button type="button" data-filter=".category-sitetemplate">Site Template</button>
+                            <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
+                            <button type="button" data-filter=".category-joomla">Joomla</button>
+                            <button type="button" data-filter=".category-userinterface">User Interface</button>
+                            <button type="button" data-filter=".category-landingpage">Landing Page</button>
+                            <button type="button" data-filter=".category-software">Software</button>
+                        </div>
                     </div>
                     <div class="relise__inner">
                         <div class="product__item relise__item mix category-plugins">
@@ -1120,270 +1139,285 @@
                         Your Followers Feed
                     </div>
                     <div class="followers__slider">
-                        <div class="product__item relise__item followers__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        E-commerce Shopping Cart
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the mattis, leo quam aliquet congue.
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item relise__item followers__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $20
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            E-commerce Shopping Cart
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">90</div>
-                                        <div class="product__item-star"></div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the mattis, leo quam aliquet congue.
+                                        </div>
                                     </div>
-                                    <div class="product__cart">
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">246</div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $20
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">90</div>
+                                            <div class="product__item-star"></div>
+                                        </div>
+                                        <div class="product__cart">
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">246</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__item relise__item followers__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        E-commerce Shopping Cart
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the mattis, leo quam aliquet congue.
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item relise__item followers__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $20
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            E-commerce Shopping Cart
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">90</div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the mattis, leo quam aliquet congue.
+                                        </div>
                                     </div>
-                                    <div class="product__cart">
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">246</div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $20
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">90</div>
+                                        </div>
+                                        <div class="product__cart">
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">246</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__item relise__item followers__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        E-commerce Shopping Cart
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the mattis, leo quam aliquet congue.
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item relise__item followers__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $20
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            E-commerce Shopping Cart
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">90</div>
-                                        <div class="product__item-star"></div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the mattis, leo quam aliquet congue.
+                                        </div>
                                     </div>
-                                    <div class="product__cart">
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">246</div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $20
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">90</div>
+                                            <div class="product__item-star"></div>
+                                        </div>
+                                        <div class="product__cart">
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">246</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__item relise__item followers__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        E-commerce Shopping Cart
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the mattis, leo quam aliquet congue.
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item relise__item followers__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $20
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            E-commerce Shopping Cart
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">90</div>
-                                        <div class="product__item-star"></div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the mattis, leo quam aliquet congue.
+                                        </div>
                                     </div>
-                                    <div class="product__cart">
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">246</div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $20
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">90</div>
+                                            <div class="product__item-star"></div>
+                                        </div>
+                                        <div class="product__cart">
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">246</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__item relise__item followers__item">
-                            <div class="product__item-image" style="background-image: url(images/content/popular.jpg);">
-                            </div>
-                            <div class="product__item-image--hover">
-                                <a href="#">More Info</a>
-                                <a href="#">Live Demo</a>
-                            </div>
-                            <div class="product__item-text">
-                                <div class="product__item-box">
-                                    <a class="product__item-title" href="#">
-                                        E-commerce Shopping Cart
-                                    </a>
-                                    <div class="product__item-parametr">
-                                        <a class="product__item-manager" href="#">
-                                            <div class="item__manager-avatar"
-                                                style="background-image: url(images/content/avatar.jpg);"></div>
-                                            <div class="item__manager-name">
-                                                AazzTech
-                                            </div>
-                                        </a>
-                                        <a class="product__item-category" href="#">
-                                            <div class="item__category-icon">
-                                                <img src="images/icons/wordpress.png" alt="">
-                                            </div>
-                                            <div class="item__category-name">WordPress</div>
-                                        </a>
-                                    </div>
-                                    <div class="product__item-descr">
-                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                                        scelerisque
-                                        the mattis, leo quam aliquet congue.
-                                    </div>
+                        <div class="popular__slide">
+                            <div class="product__item relise__item followers__item">
+                                <div class="product__item-image"
+                                    style="background-image: url(images/content/popular.jpg);">
                                 </div>
-                                <div class="product__item-info">
-                                    <div class="product__item-inner">
-                                        <div class="product__item-price">
-                                            $20
+                                <div class="product__item-image--hover">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                                <div class="product__item-text">
+                                    <div class="product__item-box">
+                                        <a class="product__item-title" href="#">
+                                            E-commerce Shopping Cart
+                                        </a>
+                                        <div class="product__item-parametr">
+                                            <a class="product__item-manager" href="#">
+                                                <div class="item__manager-avatar"
+                                                    style="background-image: url(images/content/avatar.jpg);"></div>
+                                                <div class="item__manager-name">
+                                                    AazzTech
+                                                </div>
+                                            </a>
+                                            <a class="product__item-category" href="#">
+                                                <div class="item__category-icon">
+                                                    <img src="images/icons/wordpress.png" alt="">
+                                                </div>
+                                                <div class="item__category-name">WordPress</div>
+                                            </a>
                                         </div>
-                                        <a class="product__item-like" href="#">
-                                            <img src="images/icons/heart.svg" alt="">
-                                        </a>
-                                        <div class="like__quantity">90</div>
+                                        <div class="product__item-descr">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                            scelerisque
+                                            the mattis, leo quam aliquet congue.
+                                        </div>
                                     </div>
-                                    <div class="product__cart">
-                                        <a class="product__item-cart" href="#">
-                                            <img src="images/icons/cart.svg" alt="">
-                                        </a>
-                                        <div class="cart__quantity">246</div>
+                                    <div class="product__item-info">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-price">
+                                                $20
+                                            </div>
+                                            <a class="product__item-like" href="#">
+                                                <img src="images/icons/heart.svg" alt="">
+                                            </a>
+                                            <div class="like__quantity">90</div>
+                                        </div>
+                                        <div class="product__cart">
+                                            <a class="product__item-cart" href="#">
+                                                <img src="images/icons/cart.svg" alt="">
+                                            </a>
+                                            <div class="cart__quantity">246</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </section>
